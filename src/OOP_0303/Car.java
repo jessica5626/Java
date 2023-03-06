@@ -2,8 +2,8 @@ package OOP_0303;
 
 public class Car {
 	String color;	//색상
-	int speed;		// 속도
-	int gear;		// 기어
+	int speed;	// 속도
+	int gear;	// 기어
 	
 	@Override
 	public String toString() {
