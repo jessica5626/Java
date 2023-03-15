@@ -1,9 +1,9 @@
 package OOP_0313;
 
 class A {
-	private int a;		// 전용
-	int b;				// 디폴트
-	public int c;		// 공용
+	private int a;				// 전용
+	int b;					// 디폴트
+	public int c;				// 공용
 }
 
 
