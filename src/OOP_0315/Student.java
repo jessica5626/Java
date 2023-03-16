@@ -30,6 +30,5 @@ public class Student {
 		int year = d.getYear();
 		return (year - birthYear);
 	}
-	
-	
+		
 }
