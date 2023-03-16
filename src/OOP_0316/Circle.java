@@ -3,7 +3,7 @@ package OOP_0316;
 public class Circle {
 	
 	private int radius;
-	// Point_270p 참조 변수가 필들 선언되어 있음
+	// Point_270p 참조 변수가 필 선언되어 있음
 	private Point_270p center;
 	
 	
