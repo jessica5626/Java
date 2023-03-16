@@ -3,7 +3,7 @@ package OOP_0316;
 public class Television {
 	
 	private int channel;		// 채널 번호
-	private int volume;			// 볼륨
+	private int volume;		// 볼륨
 	private boolean onOff;		// 전원 상태
 	
 	Television(int c, int v, boolean o) {
