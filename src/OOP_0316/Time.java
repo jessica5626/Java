@@ -3,8 +3,8 @@ package OOP_0316;
 public class Time {
 
 	private int hour;	// 0 - 23
-	private int minute; // 0 - 59
-	private int second; // 0 - 59
+	private int minute; 	// 0 - 59
+	private int second; 	// 0 - 59
 	
 	// 첫 번째 생성자
 	public Time() {
