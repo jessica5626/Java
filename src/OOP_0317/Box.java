@@ -33,8 +33,9 @@ public class Box {
 		System.out.println("첫 번째 박스의 부피 : " + b1.getVolume());
 		System.out.println("두 번째 박스의 부피 : " + b2.getVolume());
 		
+		Box largerBox = Box.whoisLargerBox(b1, b2);
 		Box.whoisLargerBox(b1, b2);
-		// System.out.println("더 큰 박스의 부피 : " + largerBox.getVolume);
+		System.out.println("더 큰 박스의 부피 : " + largerBox.getVolume());
 
 	}
 
