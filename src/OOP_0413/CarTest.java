@@ -32,7 +32,7 @@ public class CarTest {
 		   
 		   Box box = new Box(10, 20, 30);
 		   => 위에서 test 클래스의 Box를 import 했기 때문에
-		   	  굳이 위 코드처럼 안적어도 불러올 수 있음
+		      굳이 위 코드처럼 안적어도 불러올 수 있음
 		   
 		   System.out.println(car1.equals(box));
 		*/
