@@ -46,6 +46,19 @@ public class Test {
 				return p.getGender() == Sex.MALE;
 			}
 		});
+		
+		// 람다식은 이름없는 메소드라 할 수 있다.
+		// 람다식을 이용하는 이유는 간결하기 때문이다.
+		// 람다식을 이용하는 메소드가 필요한 곳에 간단히 메소드를 보낼 수 있다.
+		// 람다식은 함수형 프로그래밍을 자바에 도입한 것이다.
+		// 람다식은 오직 하나의 추상 메소드를 가지는 인터페이스 타입의 객체를 요구하는
+		// 메소드의 인자로 전달될 수 있다.
+		// 람다식의 문법 
+		// (arg1, arg2, ...) -> { body }
+		// (type1 arg1, type2 arg2, ...) -> { body }
+		
+		// 위의 무명클래스를 람다식으로 구현해보자.
+		printPersons(list, p -> p.getGender() == Sex.MALE);
 	}
 	
 	// collection framework : List, Set, Map, Stack, Queue
