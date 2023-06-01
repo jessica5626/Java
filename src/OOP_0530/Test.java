@@ -29,7 +29,13 @@ public class Test {
 		// CheckPersonMale18to25 cm = new CheckPersonMale18to25();
 		// printPersons(list, cm);
 		// printPersons(list, new CheckPersonMale18to25());
-		printPersons(list, new CheckPersonFemale20to30());
+		// printPersons(list, new CheckPersonFemale20to30());
+		
+		// CheckPerson 인터페이스를 implements 하는 클래스를 하나 생성해서
+		// printPersons 메소드를 호출해라.
+		// 단, 이 메소드에 의해 출력되는 Person 객체는 성별이 남자인 객체이어야 한다.
+		printPersons(list, new CheckPersonMale());
+		
 	}
 	
 	// collection framework : List, Set, Map, Stack, Queue
@@ -91,5 +97,11 @@ class CheckPersonMale18to25 implements CheckPerson {
 class CheckPersonFemale20to30 implements CheckPerson {
 	public boolean test(Person p) {
 		return p.getGender() == Sex.FEMALE && p.getAge() >= 20 && p.getAge() <= 30;
+	}
+}
+
+class CheckPersonMale implements CheckPerson {
+	public boolean test(Person p) {
+		return p.getGender() == Sex.MALE;
 	}
 }
