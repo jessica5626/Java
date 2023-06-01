@@ -34,8 +34,18 @@ public class Test {
 		// CheckPerson 인터페이스를 implements 하는 클래스를 하나 생성해서
 		// printPersons 메소드를 호출해라.
 		// 단, 이 메소드에 의해 출력되는 Person 객체는 성별이 남자인 객체이어야 한다.
-		printPersons(list, new CheckPersonMale());
+		// printPersons(list, new CheckPersonMale());
 		
+		// 위와 똑같이 성별이 남자인 객체만 출력하도록
+		// printPersons 메서드를 호출하되, 무명클래스를 이용해봐라.
+		// CheckPerson 인터페이스를 구현하는 무명클래스를 생성해 printPersons 메서드를 호출하면 된다.
+		// 클래스 선언과(정의와) 객체생성을 동시에 할 수 있는 방법이 무명클래스 이잖아..
+		printPersons(list, new CheckPerson() {
+			@Override
+			public boolean test(Person p) {
+				return p.getGender() == Sex.MALE;
+			}
+		});
 	}
 	
 	// collection framework : List, Set, Map, Stack, Queue
