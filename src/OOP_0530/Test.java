@@ -58,7 +58,13 @@ public class Test {
 		// (type1 arg1, type2 arg2, ...) -> { body }
 		
 		// 위의 무명클래스를 람다식으로 구현해보자.
-		printPersons(list, p -> p.getGender() == Sex.MALE);
+		// printPersons(list, p -> p.getGender() == Sex.MALE);
+		// printPersons(list, (Person p) -> { return p.getGender() == Sex.MALE; });
+		
+		// 람다식의 body가 return 문 하나만으로 구성되어 있으면 return 키워드, {}, 문장 끝의
+		// 세미콜론(;)도 생략할 수 있다.
+		// printPersons(list, (p) -> p.getGender() == Sex.MALE);
+		
 	}
 	
 	// collection framework : List, Set, Map, Stack, Queue
