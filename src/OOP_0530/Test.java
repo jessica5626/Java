@@ -65,6 +65,16 @@ public class Test {
 		// 세미콜론(;)도 생략할 수 있다.
 		// printPersons(list, (p) -> p.getGender() == Sex.MALE);
 		
+		printPersons(list, (p) -> {
+			System.out.println(p.getName());
+			return p.getAge() >= 30;
+		});
+		
+		// 람다식의 매개변수가 오직 하나일 때는 매개변수를 둘러싸는 () 생략할 수 있다.
+		printPersons(list, p -> {
+			System.out.println(p.getName());
+			return p.getAge() >= 30;
+		});
 	}
 	
 	// collection framework : List, Set, Map, Stack, Queue
