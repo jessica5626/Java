@@ -71,9 +71,15 @@ public class Test {
 		});
 		
 		// 람다식의 매개변수가 오직 하나일 때는 매개변수를 둘러싸는 () 생략할 수 있다.
+		// printPersons(list, p -> {
+		//	System.out.println(p.getName());
+		//	return p.getAge() >= 30;
+		// });
+		
+		// 람다식을 이용해서 printPersons 메소드를 호출하고,
+		// 그 결과로 나이 20살에서 30살 사이의 여자만 출력되도록 구현하라.
 		printPersons(list, p -> {
-			System.out.println(p.getName());
-			return p.getAge() >= 30;
+			return p.getAge() >= 20 && p.getAge() <= 30 && p.getGender() == Sex.FEMALE;
 		});
 	}
 	
