@@ -20,5 +20,15 @@ public class Test {
 //		람다로 구현할 수 있다.
 		t.test((s)->{System.out.println(s);});
 	}
+	
+	public static int sum(int n1, int n2, int n3, Add add) {
+		int result = add.add(n1, n2);
+		result = add.add(result, n3);
+		System.out.println(result);
+		return result;
+	}
+}
 
+interface Add {
+	int add(int n1, int n2);
 }
